@@ -12,7 +12,6 @@ exports.handler = async function(event, context) {
         credentials: credentials,
         scopes: scopes,
     });
-    console.log(auth);
 
     return await auth.getRequestHeaders(uri);
 };
